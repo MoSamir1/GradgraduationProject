@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/bootstrap-utilities.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/icons/" />
+  </head>
+  <body >
+    <div class="bg-image"></div>
+    <div class=" container pb-3 mt-4 p-0 rounded-3">
+      <div class="row w-60  justify-content-between">
+        <div class="col-5 mt-5 mb-3">
+          <h4 class="text-dark">Patient Registeration</h4>
+        </div>
+        <div class="col-7 mt-5">
+          <p class="">
+            If you already have an account,
+            <span class="">
+              <a
+                class="link-offset-2 link-underline link-underline-opacity-0"
+                href="/pages/signin.html"
+                >Login here</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <form class="row g-3 w-60 ">
+        <div class="col-md-6">
+          <label for="validationServer01" class="form-label fw-bolder text-muted"
+            >First name</label
+          >
+          <input
+            type="text"
+            class="form-control is-valid"
+            id="validationServer01"
+            value="Mohamed"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer02" class="form-label fw-bolder text-muted"
+            >Last name</label
+          >
+          <input
+            type="text"
+            class="form-control is-valid"
+            id="validationServer02"
+            value="Samir"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-12">
+          <label for="validationServerUsername" class="form-label fw-bolder text-muted"
+            >Email</label
+          >
+          <div class="input-group has-validation">
+            <input
+              type="email"
+              class="form-control is-valid"
+              placeholder="abc123@gmail.com"
+              value="Ali546@gmail.com"
+              id="validationServerUsername"
+              required
+            />
+            <div
+              id="validationServerUsernameFeedback"
+              class="invalid-feedback"
+            >
+              Please write your email.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer03" class="form-label fw-bolder text-muted"
+            >phone no</label
+          >
+          <input
+            type="number"
+            class="form-control is-invalid"
+            id="validationServer03"
+            aria-describedby="validationServer03Feedback"
+            placeholder="0123456789"
+            required
+          />
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid phone number.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer04" class="form-label  fw-bolder text-muted">State</label>
+          <select
+            class="form-select is-invalid"
+            id="validationServer04"
+            aria-describedby="validationServer04Feedback"
+            required
+          >
+            <option selected disabled value="">Choose...</option>
+            <option>cairo</option>
+            <option>Alex</option>
+            <option>Giza</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+            <option>Aswan</option>
+          </select>
+          <div id="validationServer04Feedback" class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+
+        <div class="col-6 col-md-6 mb-2">
+          <div>
+            <label class="form-label fw-bolder text-muted">Gender</label>
+          </div>
+          <div class="form-control">
+            <div class="form-check form-check-inline ms-1">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+                bg-ganger
+              />
+              <label class="form-check-label  " for="inlineRadio1"
+                >Male</label
+              >
+            </div>
+            <div class="form-check form-check-inline ms-3">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+              <label class="form-check-label " for="inlineRadio2"
+                >Female</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label
+            for="validationServer02"
+            class="form-label fw-bolder text-muted"
+          >
+            Date of birth
+          </label>
+          <input
+            type="text"
+            class="form-control is-valid"
+            id="validationServer02"
+            placeholder=" 11 - 9 - 2001"
+            required
+          />
+          <!-- <div class="valid-feedback">Looks good!</div> -->
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input is-valid"
+              type="checkbox"
+              value=""
+              id="validCheck3"
+              aria-describedby="validCheck3Feedback"
+              checked
+              required
+            />
+            <label class="form-check-label" for="invalidCheck3">
+              I have read and accept Terms of Use, Privacy & conditions
+            </label>
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary w-50" type="submit">
+            Sign UP
+          </button>
+        </div>
+      </form>
+      <div class="col-3"></div>
+    </div>
+        
+    </div>
+
+    <!-- //////////////////////////////////// -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
